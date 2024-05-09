@@ -1,7 +1,6 @@
 let api = 'XJf6cftmhOrEeWqbgKo6TECxmbWIwofPN47NRKUrbNtyt8UL0rszaUPv'
 let load = document.getElementById('loadbtn')
 let secondary = document.getElementById('secondary')
-let loadSecondaryBtn = document.getElementById('load-secondary-img')
 let cards = document.querySelectorAll('.card')
 let imgOld = document.querySelectorAll('.card img')
 let titles = document.querySelectorAll('.card-title')
@@ -58,7 +57,7 @@ load.addEventListener('click', () =>{
         muted[i].innerHTML = foto[i].id
     }
     })
-    .catch(error => console.log('Non va e mo e pure colpa tua', error))
+    .catch(error => console.log('Non va e mo è pure colpa tua', error))
     }
 )
 
