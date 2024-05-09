@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-let imgg = document.querySelectorAll('.card img')
+// diplay none di base alle immagini e bottone view che le fa vedere o le toglie
 
 document.addEventListener('DOMContentLoaded', function() {
     let immagini = document.getElementsByTagName('img');
@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let view = viewBtn[i]
         
         view.addEventListener('click',()=>{
-            imgg[i].classList.toggle('d-none')
+            immagini[i].classList.toggle('d-none')
         })
     }
 });
