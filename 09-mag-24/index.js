@@ -54,7 +54,10 @@ load.addEventListener('click', () =>{
         body[i].classList.add('d-flex')
         body[i].classList.add('flex-column')
         body[i].classList.add('justify-content-between')
-        muted[i].innerHTML = foto[i].id
+        if (i > 0) {
+            muted[i].innerHTML = foto[i-1].id;
+            muted[9].innerHTML = foto[8].id;
+          } 
     }
     })
     .catch(error => console.log('Non va e mo è pure colpa tua', error))
@@ -107,7 +110,10 @@ document.getElementById('secondary').addEventListener('click', () => {
         body[i].classList.add('d-flex')
         body[i].classList.add('flex-column')
         body[i].classList.add('justify-content-between')
-        muted[i].innerHTML = foto[i].id
+        if (i > 0) {
+            muted[i].innerHTML = foto[i-1].id;
+            muted[9].innerHTML = foto[8].id;
+          } 
     }
     })
     .catch(error => console.log('Non va e mo è pure colpa tua', error))
